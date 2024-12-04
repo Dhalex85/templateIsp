@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TuISP - [TÍTULO DE LA PÁGINA]</title>
+    <title>TuISP - Formas de pago</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="stylebypage.css" rel="stylesheet">
-   
+    
 </head>
 <body>
     <!-- Barra de navegación -->
     <nav class="navbar">
         <div class="navbar-content">
             <div class="logo">TuISP</div>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <a href="index.html">Inicio</a>
                 <a href="nosotros.html">Nosotros</a>
                 <a href="contacto.html">Contacto</a>
                 <a href="legal.html">Legal</a>
-                <a href="pagos.html">Pagos</a>
+                <a href="#pagos">Pagos</a>
             </div>
+            <!-- Ícono de hamburguesa -->
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         </div>
     </nav>
 
@@ -28,14 +34,40 @@
     <div class="breadcrumb">
         <a href="index.html">Inicio</a>
         <span>></span>
-        <span>[Nombre de la página]</span>
+        <span>pagos</span>
     </div>
-
     
 
     <!-- Contenido principal -->
     <main class="page-content">
-       
+        <!-- Sección de Opciones de Pago -->
+        <section class="payment-options" id="pagos">
+            <h2 class="section-title">Opciones de Pago</h2>
+            <p>Elige la forma de pago que más te convenga. A continuación te mostramos las opciones disponibles:</p>
+            <div class="payment-cards-container">
+                <div class="payment-card">
+                    <div class="payment-icon">💳</div>
+                    <h3>Transferencia Bancaria</h3>
+                    <p>Realiza tu pago desde tu banca en línea o en una sucursal bancaria.</p>
+                    <p><strong>Cuenta:</strong> 1234 5678 9101 1121</p>
+                    <p><strong>Banco:</strong> Bancorp</p>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-icon">💵</div>
+                    <h3>Pago en Efectivo</h3>
+                    <p>Acude a cualquiera de nuestras sucursales para realizar tu pago en efectivo.</p>
+                    <p><strong>Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-icon">🛒</div>
+                    <h3>Pago en Tiendas</h3>
+                    <p>Realiza tu pago en cadenas autorizadas como OXXO y 7-Eleven.</p>
+                    <p><strong>Referencia:</strong> 123456789</p>
+                </div>
+            </div>
+        </section>
+
+        
 
     </main>
 
@@ -70,5 +102,6 @@
             </div>
         </div>
     </footer>
+<script src="scripts.js"></script>
 </body>
 </html>

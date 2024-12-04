@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuISP - [TÍTULO DE LA PÁGINA]</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="stylebypage.css" rel="stylesheet">
+   
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">TuISP</div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="legal.html">Legal</a>
+                <a href="pagos.html">Pagos</a>
+            </div>
+            <!-- Ícono de hamburguesa -->
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span>></span>
+        <span>[Nombre de la página]</span>
+    </div>
+
+    
+
+    <!-- Contenido principal -->
+    <main class="page-content">
+       <!-- Formulario de Contacto -->
+<section class="contact-form" id="contacto">
+    <h2 class="section-title">Contáctanos</h2>
+    <p>Envíanos tus preguntas o comentarios y nuestro equipo te responderá a la brevedad.</p>
+    <form action="#" method="POST" class="form">
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+        </div>
+        <div class="form-group">
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" required placeholder="Asunto del mensaje">
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</section>
+
+<!-- Información de Contacto -->
+<section class="business-info">
+    <h2 class="section-title">Nuestra Ubicación</h2>
+    <p>Visítanos en nuestra oficina o contáctanos a través de los siguientes medios:</p>
+    <div class="info-container">
+        <div class="map-frame">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096164!2d144.95373531531858!3d-37.81627974202198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577a6d0ed8e4e!2s123+Queen+St%2C+Melbourne+VIC+3000%2C+Australia!5e0!3m2!1sen!2sau!4v1646889521220!5m2!1sen!2sau" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <div class="info-details">
+            <p><strong>Dirección:</strong> Calle Principal 123, Ciudad, País</p>
+            <p><strong>Teléfono:</strong> (555) 123-4567</p>
+            <p><strong>Correo Electrónico:</strong> info@tuisp.com</p>
+            <p><strong>Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="legal.html">Legal</a></li>
+                    <li><a href="pagos.html">Pagos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul class="footer-links">
+                    <li>Email: info@tuisp.com</li>
+                    <li>Teléfono: (555) 123-4567</li>
+                    <li>Dirección: Calle Principal 123</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

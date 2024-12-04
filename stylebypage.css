@@ -1,37 +1,411 @@
+.page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 60vh; /* Asegura un mínimo de altura para el contenido */
+}
 
-   
-        .page-header {
-            padding-top: 6rem;
-            padding-bottom: 2rem;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            text-align: center;
-        }
+.breadcrumb {
+    padding: 1rem 2rem;
+    background: var(--light-bg);
+}
 
-        .page-title {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
 
-        .page-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-            min-height: 60vh; /* Asegura un mínimo de altura para el contenido */
-        }
+.breadcrumb span {
+    color: var(--text-color);
+    margin: 0 0.5rem;
+}
 
-        .breadcrumb {
-            padding: 1rem 2rem;
-            background: var(--light-bg);
-        }
+.contact-form {
+    padding: 4rem 2rem;
+    background: var(--light-bg);
+    text-align: center;
+}
 
-        .breadcrumb a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
+.contact-form .form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
 
-        .breadcrumb span {
-            color: var(--text-color);
-            margin: 0 0.5rem;
-        }
-   
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+.contact-form .btn {
+    width: fit-content;
+    align-self: center;
+}
+
+/* ---- Documentos Legales ---- */
+.legal-documents {
+    padding: 4rem 2rem;
+    background: var(--light-bg);
+    text-align: center;
+}
+
+.legal-documents .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.document-list {
+    list-style: none;
+    margin: 2rem auto 0;
+    padding: 0;
+    max-width: 800px;
+    border-top: 1px solid #ddd;
+}
+
+.document-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #ddd;
+    transition: var(--transition);
+}
+
+.document-item:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.document-item:hover .document-btn {
+    background: white;
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.document-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.document-btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+/* ---- Opciones de Pago ---- */
+.payment-options {
+    padding: 4rem 2rem;
+    background: var(--light-bg);
+    text-align: center;
+}
+
+.payment-options .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.payment-options p {
+    margin: 0.5rem 0 1.5rem;
+    color: var(--text-color);
+}
+
+.payment-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.payment-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: var(--transition);
+}
+
+.payment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.payment-card .payment-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.payment-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.payment-card p {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+/*Fin pagos*/
+
+/* ---- Encabezado de "Nosotros" ---- */
+.about-header {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+/* ---- Misión y Visión ---- */
+.about-values {
+    padding: 4rem 2rem;
+    background: var(--light-bg);
+    text-align: center;
+}
+
+.values-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.value-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.value-item h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.value-item p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* ---- Valores Listado ---- */
+.values-title {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.values-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.value-card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.value-card p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.value-card p strong {
+    font-weight: bold;
+}
+
+/* ---- Por Qué Elegirnos ---- */
+.about-reasons {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: white;
+}
+
+.reasons-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.reasons-list li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* ---- Conócenos / Nuestro Trabajo ---- */
+.our-work {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: var(--light-bg);
+}
+
+.our-work .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.our-work p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.slider-item:hover .slider-overlay {
+    opacity: 1;
+}
+
+.slider-overlay p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
